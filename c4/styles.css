@@ -1,0 +1,49 @@
+/* 設定畫布背景樣式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #87CEEB; /* 天空藍 */
+}
+
+canvas#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 顯示祝福文字樣式 */
+.message {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+    animation: fadeIn 3s infinite alternate;
+}
+
+/* 計分樣式 */
+.score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* 淡入動畫效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
